@@ -1,0 +1,212 @@
+<!Doctype HTML>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Helpers!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!--<base href='/'> -->
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/helpers.css"/>
+  <!-- endbuild -->
+</head>
+
+<body ng-app="HelpersApp" ng-controller="landingCtrl" style="margin-top: -20px">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="backBlue centered" style="padding: 2%; font-size: 20px;">
+  <h1 class="white bold" style="font-size: 40px; font-family: Nunito, sans-serif;">
+    Cogitr
+  </h1>
+
+  <h4 style="font-family: Droid Sans Mono, serif">
+    Grow with us.
+  </h4>
+</div>
+
+<div class="container centered" style="margin-top: 5%">
+  <img class="img-centered img-responsive" src="images/uiImages.png"/>
+
+  <div class="vertSpace5"></div>
+
+  <p>
+    We are here to help you connect with a tutor or student instantly.
+  </p>
+
+  <p class="vertSpace8">
+    With only one tap, you can find your ideal tutor or student.
+  </p>
+
+  <div class="bold vertSpace2" style="font-family: Nunito, sans-serif;">
+    <h3 style="margin: 0">
+      We are releasing our Beta App in the Fall.
+    </h3>
+
+    <h3 style="margin: 1%;">
+      Join the community now!
+    </h3>
+  </div>
+
+  <div class="col-xs-8 col-centered centered">
+    <div ng-show="tutor" class="vertSpace40">
+      <form action="//helpers.us11.list-manage.com/subscribe/post?u=ac52c0e2e1d3f827076d7c72b&amp;id=6fe3785f0a"
+            method="post" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+        <div>
+          <div class="form-group">
+            <span class="glyphicon glyphicon-menu-right"
+                  style="font-size: 25px;"></span>
+            <input type="email" value="" name="EMAIL"
+                   style="font-family: Droid Sans Mono, sans-serif; font-size: 20px; border-top: none; border-left: none; border-right: none; border-bottom: #bcbcbc solid 2px; width: 90%"
+                   class="vertSpace5" id="mce-EMAIL"
+                   placeholder="Email address"
+                   required>
+          </div>
+
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                 name="b_ac52c0e2e1d3f827076d7c72b_6fe3785f0a"
+                                                                 tabindex="-1" value=""></div>
+
+          <br>
+
+          <label>
+            <input type="radio" name="tutorTuteeOption"/>
+            <img src="images/tickedBox.svg" ng-click="selectTutor()">
+          </label>
+
+          <p style="display: inline; font-size: 20px;" class="vertSpace5">
+            I want to teach.
+          </p>
+          <br>
+
+          <label>
+            <input type="radio" name="tutorTuteeOption"/>
+            <img src="images/rectangle.svg" ng-click="selectTutee()">
+          </label>
+
+          <p style="display: inline; font-size: 20px;">I want to learn.</p>
+
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                    class="btn btn-info"
+                                    style="width: 100%; font-style: italic; font-size: 23px; margin-top: 5%"></div>
+        </div>
+
+      </form>
+    </div>
+
+    <div ng-hide="tutor" class="vertSpace40">
+      <form action="//helpers.us11.list-manage.com/subscribe/post?u=ac52c0e2e1d3f827076d7c72b&amp;id=1bd1743840"
+            method="post" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+        <div>
+          <div class="form-group">
+            <span class="glyphicon glyphicon-menu-right"
+                  style="font-size: 25px;"></span>
+            <input type="email" value="" name="EMAIL"
+                   style="font-family: Droid Sans Mono, sans-serif; font-size: 20px; border-top: none; border-left: none; border-right: none; border-bottom: #bcbcbc solid 2px; width: 90%"
+                   class="vertSpace5" id="mce-EMAIL"
+                   placeholder="Email address"
+                   required>
+          </div>
+
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                 name="b_ac52c0e2e1d3f827076d7c72b_6fe3785f0a"
+                                                                 tabindex="-1" value=""></div>
+
+          <br>
+
+          <label>
+            <input type="radio" name="tutorTuteeOption"/>
+            <img src="images/rectangle.svg" ng-click="selectTutor()">
+          </label>
+
+          <p style="display: inline; font-size: 20px;" class="vertSpace5">
+            I want to teach.
+          </p>
+          <br>
+
+          <label>
+            <input type="radio" name="tutorTuteeOption"/>
+            <img src="images/tickedBox.svg" ng-click="selectTutee()">
+          </label>
+
+          <p style="display: inline; font-size: 20px;">I want to learn.</p>
+
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                    class="btn btn-info"
+                                    style="width: 100%; font-style: italic; font-size: 23px; margin-top: 5%"></div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="row vertSpace2">
+    <div class="col-centered">
+      <a href="https://twitter.com/cogitr"> <img src="images/twitter.svg"/> </a>
+      <a href="https://www.facebook.com/helpersapp"> <img src="images/facebook.svg"/></a>
+      <a href="http://cogitr.blogspot.com/"> <img src="images/blogger.svg"/></a>
+    </div>
+  </div>
+
+  <div class="footer darkGrey">
+    <p>
+      &copy Cogitr, Inc. 2015 | All Rights Reserved
+    </p>
+  </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61903187-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/backbone.localStorage/backbone.localStorage.js"></script>
+<script src="bower_components/ngstorage/ngStorage.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/landingCtrl.js"></script>
+<!-- For IE 9 -->
+<!-- endbuild -->
+
+</body>
+</html>
